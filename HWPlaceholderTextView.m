@@ -40,6 +40,12 @@
     return self;
 }
 
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    self.placeHolderLabel.width = frame.size.width-10;
+}
+
 #pragma mark - Private
 - (void)refreshPlaceholder
 {
